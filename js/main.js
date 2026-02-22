@@ -526,3 +526,84 @@ document.querySelector('.checkout-btn').addEventListener('click', () => {
 function calcularTotal(carrito) {
     return carrito.reduce((sum, item) => sum + (item.price * item.quantity), 0);
 }
+
+// ===== FUNCIONES FALTANTES =====
+
+// Función para cerrar el carrito
+function closeCartSidebar() {
+    const cartSidebar = document.getElementById('cartSidebar');
+    const overlay = document.getElementById('overlay');
+    if (cartSidebar) {
+        cartSidebar.classList.remove('active');
+    }
+    if (overlay) {
+        overlay.classList.remove('active');
+    }
+    document.body.style.overflow = 'auto';
+}
+
+// Función para inicializar partículas (simplificada)
+function initParticles() {
+    console.log('Particles initialized');
+    // Si no tienes partículas, esta función no hace nada
+    // Solo evitamos el error
+}
+
+// Función para inicializar contadores de estadísticas
+function initStatsCounter() {
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach(stat => {
+        const target = parseInt(stat.getAttribute('data-target') || '0');
+        let current = 0;
+        const increment = target / 50;
+        
+        const updateCounter = () => {
+            current += increment;
+            if (current < target) {
+                stat.textContent = Math.ceil(current);
+                setTimeout(updateCounter, 30);
+            } else {
+                stat.textContent = target;
+            }
+        };
+        updateCounter();
+    });
+}
+
+// Función para inicializar testimonios
+function initTestimonials() {
+    const dots = document.querySelectorAll('.dot');
+    const cards = document.querySelectorAll('.testimonial-card');
+    
+    if (dots.length && cards.length) {
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                dots.forEach(d => d.classList.remove('active'));
+                cards.forEach(c => c.classList.remove('active'));
+                dot.classList.add('active');
+                cards[index].classList.add('active');
+            });
+        });
+    }
+}
+
+// Función para inicializar búsqueda
+function initSearch() {
+    const searchBtn = document.querySelector('.search-btn');
+    if (searchBtn) {
+        searchBtn.addEventListener('click', () => {
+            alert('Función de búsqueda disponible pronto');
+        });
+    }
+}
+
+// Función para inicializar newsletter
+function initNewsletter() {
+    const newsletterForm = document.querySelector('.newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('¡Gracias por suscribirte! Pronto recibirás nuestras ofertas.');
+        });
+    }
+}
