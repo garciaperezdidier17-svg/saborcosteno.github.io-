@@ -120,6 +120,7 @@ const products = [
         badge: "Nuevo",
         rating: 4.9,
         reviews: 267
+    },       
     
 ];
 
