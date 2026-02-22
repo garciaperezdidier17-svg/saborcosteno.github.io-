@@ -457,7 +457,7 @@ function enviarPedidoWhatsApp() {
     
     // Codificar mensaje para URL
     const mensajeCodificado = encodeURIComponent(mensaje);
-    const numeroWhatsApp = '573054567890'; // Tu número
+    const numeroWhatsApp = '+573146938535'; // Tu número
     
     // Abrir WhatsApp
     window.open(`https://wa.me/${numeroWhatsApp}?text=${mensajeCodificado}`, '_blank');
@@ -520,7 +520,7 @@ document.querySelector('.checkout-btn').addEventListener('click', () => {
     mensaje += `\n💳 *Pago: ${metodo === '1' ? 'Nequi' : metodo === '2' ? 'Bancolombia' : 'Efectivo'}*`;
     
     // Abrir WhatsApp
-    window.open(`https://wa.me/573054567890?text=${encodeURIComponent(mensaje)}`);
+    window.open(`https://wa.me/+573146938535?text=${encodeURIComponent(mensaje)}`);
 });
 
 function calcularTotal(carrito) {
