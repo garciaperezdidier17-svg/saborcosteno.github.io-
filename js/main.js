@@ -110,6 +110,16 @@ const products = [
         rating: 4.6,
         reviews: 98
     },
+    {
+         id: 11,
+        name: "Arrepa De Guevo",
+        price: 3500,
+        category: "Fritos",
+        description: "Arrepa, de Guevo ",
+        image: "assets/Empanadas.jpg",
+        badge: "Nuevo",
+        rating: 4.9,
+        reviews: 267
     
 ];
 
