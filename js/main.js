@@ -110,18 +110,7 @@ const products = [
         rating: 4.6,
         reviews: 98
     },
-    {
-         id: 11,
-        name: "Arepa De Huevo",
-        price: 4500,
-        category: "Fritos",
-        description: "Arepa, de Huevo ",
-        image: "assets/huevo.jpg",
-        badge: "Nuevo",
-        rating: 4.9,
-        reviews: 267
-    },       
-    
+          
 ];
 
 // Estado de la aplicación
