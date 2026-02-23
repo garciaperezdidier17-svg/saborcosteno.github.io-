@@ -112,10 +112,10 @@ const products = [
     },
     {
          id: 11,
-        name: "Arrepa De Huevo",
+        name: "Arepa De Huevo",
         price: 4500,
         category: "Fritos",
-        description: "Arrepa, de Huevo ",
+        description: "Arepa, de Huevo ",
         image: "assets/huevo.jpg",
         badge: "Nuevo",
         rating: 4.9,
