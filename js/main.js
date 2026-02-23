@@ -112,11 +112,11 @@ const products = [
     },
     {
          id: 11,
-        name: "Arrepa De Guevo",
-        price: 3500,
+        name: "Arrepa De Huevo",
+        price: 4500,
         category: "Fritos",
-        description: "Arrepa, de Guevo ",
-        image: "assets/Empanadas.jpg",
+        description: "Arrepa, de Huevo ",
+        image: "assets/huevo.jpg",
         badge: "Nuevo",
         rating: 4.9,
         reviews: 267
